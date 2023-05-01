@@ -1,0 +1,25 @@
+{
+  "name": "mixed-messages",
+  "version": "1.0.0",
+  "description": "<h3 align=\"center\">\r     Hi there 👋, I'm Juan José, and I'm introducing you to\r </h3>\r <h2 align=\"center\">\r     The Javascript Random Generator 💻 program for developers 😎,\r </h2>",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AranzalesO/messages-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AranzalesO/messages-generator/issues"
+  },
+  "homepage": "https://github.com/AranzalesO/messages-generator#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}

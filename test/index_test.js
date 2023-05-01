@@ -1,14 +1,14 @@
-const randomMessage = require('../index')
+const messageElements = require('../index')
 const assert = require('assert')
 
-describe('randomMessage', () => {
+describe('messageElements', () => {
     describe('.pickAnIndex', () => {
         it('will not select a number out of 0 and 6', () => {
             // Setup
             const arrayTest = ["This", "is", "a", "random", "message", 1];
             const notExpectedOutput = 7;
             // Exercise
-            const randomResult =  randomMessage.pickAnIndex(arrayTest.length);
+            const randomResult =  messageElements.pickAnIndex(arrayTest.length);
             // Verify
             assert.notStrictEqual(notExpectedOutput, randomResult);
         })
@@ -19,8 +19,8 @@ describe('randomMessage', () => {
             // Setup
             const arrayCharacters = ['mexican', 'US Citizen', 'costeño', 'chilean', 'argentinian'];
             // Exercise
-            const randomIndex =  randomMessage.pickAnIndex(arrayCharacters.length);
-            const elementSelected = arrayTest[randomIndex]
+            const randomIndex =  messageElements.pickAnIndex(arrayCharacters.length);
+            const elementSelected = arrayCharacters[randomIndex]
             const confirmElement = arrayCharacters.includes(elementSelected)
             // Verify
             assert.ok(confirmElement);
@@ -32,8 +32,8 @@ describe('randomMessage', () => {
             // Setup
             const arrayActions = ['eating', 'walking', 'jumping', 'punching', 'grabbing'];
             // Exercise
-            const randomIndex =  randomMessage.pickAnIndex(arrayActions.length);
-            const elementSelected = arrayTest[randomIndex]
+            const randomIndex =  messageElements.pickAnIndex(arrayActions.length);
+            const elementSelected = arrayActions[randomIndex]
             const confirmElement = arrayActions.includes(elementSelected)
             // Verify
             assert.ok(confirmElement);
@@ -45,8 +45,8 @@ describe('randomMessage', () => {
             // Setup
             const arrayNouns = ['wall', 'sofa', 'burra', 'arepa', 'chair'];
             // Exercise
-            const randomIndex =  randomMessage.pickAnIndex(arrayNouns.length);
-            const elementSelected = arrayTest[randomIndex]
+            const randomIndex =  messageElements.pickAnIndex(arrayNouns.length);
+            const elementSelected = arrayNouns[randomIndex]
             const confirmElement = arrayNouns.includes(elementSelected)
             // Verify
             assert.ok(confirmElement);
@@ -56,14 +56,15 @@ describe('randomMessage', () => {
     describe('.selectOutcome', () => {
         it('will pass if element extracted is included inside the arrayOutcomes', () => {
             // Setup
-            const arrayOutcomes = ['wall', 'sofa', 'burra', 'arepa', 'chair'];
+            const arrayOutcomes = ['Good work!', 'Please do not do that', 'Definetly a genius', 'Keep going!', 'Congratulations'];
             // Exercise
-            const randomIndex =  randomMessage.pickAnIndex(arrayOutcomes.length);
-            const elementSelected = arrayTest[randomIndex]
+            const randomIndex =  messageElements.pickAnIndex(arrayOutcomes.length);
+            const elementSelected = arrayOutcomes[randomIndex]
             const confirmElement = arrayOutcomes.includes(elementSelected)
             // Verify
             assert.ok(confirmElement);
         })
     });
 })
+
 
