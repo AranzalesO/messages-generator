@@ -21,6 +21,5 @@ Go to your terminal and install Mocha:
 
 <a href="https://www.linkedin.com/in/juan-jos%C3%A9-aranzales-ochoa-8755631b5/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="Juan Jo | LinkedIn" width="21px"/></a>
 <a href="https://www.instagram.com/juanjoaran8a/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/instagram.svg" alt="Juan Jo | Instagram" width="21px"/></a>
-<a href="https://twitter.com/JuanJosAO1"><img align="left" src="![image](https://user-images.githubusercontent.com/71298422/235531231-63bf494c-7d21-4c83-bbb6-478d6cee3f4d.png)" alt="Juan Jo | Twitter" width="21px"/></a>
 
 
